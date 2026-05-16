@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Dough Fruit">
+  <defs>
+    <radialGradient id="g" cx="42%" cy="34%" r="66%">
+      <stop offset="0%" stop-color="#fff0d6"/>
+      <stop offset="45%" stop-color="#f9a8d4"/>
+      <stop offset="100%" stop-color="#db2777"/>
+    </radialGradient>
+  </defs>
+  <ellipse cx="64" cy="72" rx="46" ry="44" fill="url(#g)"/>
+  <path d="M40 68 Q64 52 88 68 Q64 88 40 68Z" fill="none" stroke="#9d174d" stroke-width="2" opacity=".4"/>
+  <path d="M64 18 C58 8 48 8 44 16 C42 24 50 30 64 34 C78 30 86 24 84 16 C80 8 70 8 64 18Z" fill="#be185d"/>
+</svg>

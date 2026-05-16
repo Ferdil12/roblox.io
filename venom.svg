@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Venom Fruit">
+  <defs>
+    <radialGradient id="g" cx="40%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#c4b5fd"/>
+      <stop offset="50%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#4c1d95"/>
+    </radialGradient>
+  </defs>
+  <ellipse cx="64" cy="72" rx="46" ry="44" fill="url(#g)"/>
+  <path d="M52 58 Q64 48 76 58 Q64 72 52 58Z" fill="#2e1065" opacity=".45"/>
+  <circle cx="58" cy="54" r="3" fill="#ddd6fe"/>
+  <path d="M64 18 C58 8 48 8 44 16 C42 24 50 30 64 34 C78 30 86 24 84 16 C80 8 70 8 64 18Z" fill="#5b21b6"/>
+</svg>

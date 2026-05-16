@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Leopard Fruit">
+  <defs>
+    <radialGradient id="g" cx="38%" cy="32%" r="68%">
+      <stop offset="0%" stop-color="#ffe566"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </radialGradient>
+  </defs>
+  <ellipse cx="64" cy="72" rx="46" ry="44" fill="url(#g)"/>
+  <circle cx="48" cy="62" r="5" fill="#1a1a1a" opacity=".55"/>
+  <circle cx="72" cy="78" r="4" fill="#1a1a1a" opacity=".5"/>
+  <circle cx="58" cy="84" r="3" fill="#1a1a1a" opacity=".45"/>
+  <path d="M64 20 C60 10 50 8 46 16 C44 24 52 30 64 34 C76 30 84 24 82 16 C78 8 68 10 64 20Z" fill="#92400e"/>
+</svg>

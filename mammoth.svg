@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Mammoth Fruit">
+  <defs>
+    <radialGradient id="g" cx="40%" cy="34%" r="66%">
+      <stop offset="0%" stop-color="#e7e5e4"/>
+      <stop offset="50%" stop-color="#a8a29e"/>
+      <stop offset="100%" stop-color="#57534e"/>
+    </radialGradient>
+  </defs>
+  <ellipse cx="64" cy="72" rx="46" ry="44" fill="url(#g)"/>
+  <path d="M38 70 L30 52 M90 70 L98 52" stroke="#44403c" stroke-width="5" stroke-linecap="round"/>
+  <path d="M64 18 C58 8 48 8 44 16 C42 24 50 30 64 34 C78 30 86 24 84 16 C80 8 70 8 64 18Z" fill="#78716c"/>
+  <ellipse cx="54" cy="58" rx="9" ry="12" fill="rgba(255,255,255,.22)"/>
+</svg>

