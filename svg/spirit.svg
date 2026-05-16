@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Spirit Fruit">
+  <defs>
+    <radialGradient id="g" cx="38%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#e9d5ff"/>
+      <stop offset="45%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#6d28d9"/>
+    </radialGradient>
+  </defs>
+  <ellipse cx="64" cy="72" rx="46" ry="44" fill="url(#g)" opacity=".95"/>
+  <path d="M48 80 C56 64 72 64 80 80 C72 92 56 92 48 80Z" fill="rgba(255,255,255,.25)"/>
+  <ellipse cx="58" cy="56" rx="10" ry="14" fill="rgba(255,255,255,.35)"/>
+  <path d="M64 16 C58 6 48 6 44 14 C42 22 50 28 64 32 C78 28 86 22 84 14 C80 6 70 6 64 16Z" fill="#4c1d95"/>
+</svg>
